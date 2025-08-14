@@ -1,13 +1,15 @@
 import React from "react";
+import NavBar from "../Components/NavBar";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div>
-      <h2 className="text-center text-5xl flex justify-center items-center min-h-screen">
-        React-router <span className="px-3 font-semibold italic"> v6</span> with
-        Tailwind CSS <span className="px-3 font-semibold italic"> v3</span>
-      </h2>
-    </div>
+    <>
+      <NavBar />
+      <main className="flex justify-center my-10">
+        <Outlet />
+      </main>
+    </>
   );
 };
 
