@@ -5,7 +5,6 @@ import { Outlet, useLocation, useNavigation } from "react-router-dom";
 const Root = () => {
   const navigation = useNavigation();
   const location = useLocation();
-  console.log(location);
   return (
     <>
       <NavBar />
